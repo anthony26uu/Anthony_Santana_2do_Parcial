@@ -11,9 +11,16 @@ namespace Entidades
     {
         [Key]
         public int IdProfesores { get; set; }
+        public decimal Sueldo { get; set; }
         public string Nombre { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public string Cedula { get; set; }
+        public string Direccion { get; set; }
+        public string Email { get; set; }
+        public string Telefono { get; set; }
         public string CursoImpartido { get; set; }
-        public double Sueldo { get; set; }
+        public string Sexo { get; set; }
+
 
 
         public Profesores()
@@ -22,12 +29,6 @@ namespace Entidades
 
         }
 
-        public Profesores(int id, string nombre, string curso, double sueldo)
-        {
-            this.IdProfesores = id;
-            this.Nombre = nombre;
-            this.CursoImpartido = curso;
-            this.Sueldo = sueldo;
-        }
+       
     }
 }

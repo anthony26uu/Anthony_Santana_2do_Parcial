@@ -66,7 +66,7 @@ namespace Anthony_Santana_2do_Parcial.Ui.Registros
 
                     if (BLLEstudiantes.Mofidicar(estudianteg))
                     {
-                        Utilidades.ShowToastr(this, "Se modifico elcliente Satisfactoriamente", "Correcto", "success");
+                        Utilidades.ShowToastr(this, "Se modifico  Satisfactoriamente", "Correcto", "success");
                     }
                     else
                     {

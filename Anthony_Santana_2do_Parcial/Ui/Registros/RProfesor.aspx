@@ -19,7 +19,7 @@
     <div class="text-center">
         <span class="badge badge-primary">ID</span><asp:TextBox ID="TextBoxID" TextMode="Number" class="input-lg" placeholder="ID a buscar " runat="server" Height="45px" Width="160px" ValidationGroup="buscar" MaxLength="10"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBoxID" ErrorMessage="**" Font-Bold="True" Font-Italic="True" ForeColor="Red" ValidationGroup="Buscar"></asp:RequiredFieldValidator>
-        <asp:Button ID="BotonBuscar" CssClass=" btn btn-default" runat="server" Text="Buscar" Height="45px" ValidationGroup="Buscar"  Width="83px" />
+        <asp:Button ID="BotonBuscar" CssClass=" btn btn-default" runat="server" Text="Buscar" Height="45px" ValidationGroup="Buscar"  Width="83px" OnClick="BotonBuscar_Click" />
 
         <br />
     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxID" ErrorMessage="Solo Numeros y Numeros positivos" ForeColor="Red" ValidationExpression="\d+" ValidationGroup="Buscar"></asp:RegularExpressionValidator>
@@ -141,6 +141,23 @@
 
         <br />
 
+
+        <br />
+        <span class="badge badge-primary">Sueldo</span><br />
+
+        <asp:TextBox ID="TextBoxSueldo" placeholder="10,000.00" class="input-lg" runat="server"  Height="30px" Width="215px" ValidationGroup="guardar" MaxLength="10"></asp:TextBox>
+
+
+
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TextBoxSueldo" ErrorMessage="**" Font-Bold="True" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>
+
+        <br />
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TextBoxSueldo" ErrorMessage="Solo Numeros" ForeColor="Red" ValidationExpression="\d+" ValidationGroup="guardar"></asp:RegularExpressionValidator>
+
+        <br />
+
+        <br />
+
         <span class="badge badge-primary">Sexo</span><br />
 
         <asp:DropDownList ID="DropSexo" runat="server" CssClass=" btn btn-default" class="btn-" Height="42px" Width="199px">
@@ -159,9 +176,9 @@
 
     <div class="modal-footer">
         <div class=" text-center">
-            <asp:Button ID="ButtonNuevo" CssClass="btn btn-warning" runat="server" Text="Nuevo" Height="36px" Width="88px" />
-            <asp:Button ID="ButtGuardar" CssClass="btn btn-success" runat="server" Text="Guardar" Height="36px" Width="88px" ValidationGroup="guardar"  />
-            <asp:Button ID="ButtonEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" Height="36px" Width="88px" ValidationGroup="Buscar"   />
+            <asp:Button ID="ButtonNuevo" CssClass="btn btn-warning" runat="server" Text="Nuevo" Height="36px" Width="88px" OnClick="ButtonNuevo_Click" />
+            <asp:Button ID="ButtGuardar" CssClass="btn btn-success" runat="server" Text="Guardar" Height="36px" Width="88px" ValidationGroup="guardar" OnClick="ButtGuardar_Click"  />
+            <asp:Button ID="ButtonEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" Height="36px" Width="88px" ValidationGroup="Buscar" OnClick="ButtonEliminar_Click"   />
         </div>
     </div>
 </asp:Content>
