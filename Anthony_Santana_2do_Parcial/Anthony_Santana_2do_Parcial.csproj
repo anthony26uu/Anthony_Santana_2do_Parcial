@@ -114,6 +114,9 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Ui\Consultas\CAsignaturas.aspx" />
+    <Content Include="Ui\Consultas\CEstudiantes.aspx" />
+    <Content Include="Ui\Consultas\CProfesores.aspx" />
     <Content Include="Ui\Registros\RAsignatura.aspx" />
     <Content Include="Ui\Registros\REstudiante.aspx" />
     <Content Include="Ui\Registros\RProfesor.aspx" />
@@ -140,6 +143,27 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Ui\Consultas\CAsignaturas.aspx.cs">
+      <DependentUpon>CAsignaturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ui\Consultas\CAsignaturas.aspx.designer.cs">
+      <DependentUpon>CAsignaturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Consultas\CEstudiantes.aspx.cs">
+      <DependentUpon>CEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ui\Consultas\CEstudiantes.aspx.designer.cs">
+      <DependentUpon>CEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Consultas\CProfesores.aspx.cs">
+      <DependentUpon>CProfesores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ui\Consultas\CProfesores.aspx.designer.cs">
+      <DependentUpon>CProfesores.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Ui\Registros\RAsignatura.aspx.cs">
       <DependentUpon>RAsignatura.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -164,7 +188,6 @@
     <Compile Include="Utilidades.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Ui\Consultas\" />
     <Folder Include="Ui\Reportes\" />
   </ItemGroup>
   <ItemGroup>

@@ -57,17 +57,19 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registros <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-header">Registros</li>
-                            <li><a href="#">Estudiantes</a></li>
-                            <li><a href="#">Profesores</a></li>
+                            <li><a href="/Ui/Registros/REstudiante.aspx">Estudiantes</a></li>
+                            <li><a href="/Ui/Registros/RProfesor.aspx">Profesores</a></li>
+                            <li><a href="/Ui/Registros/RAsignatura.aspx">Asiganatura</a></li>
+                        
                         </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consultas <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-header">Consultas</li>
-                            <li><a href="#">Estudiantes</a></li>
-                            <li><a href="#">Profesores</a></li>
-
+                            <li><a href="/Ui/Consultas/CEstudiantes.aspx">Estudiantes</a></li>
+                            <li><a href="/Ui/Consultas/CProfesores.aspx">Profesores</a></li>
+                            <li><a href="/Ui/Consultas/CAsignaturas.aspx">Asiganaturas</a></li>
                         </ul>
                     </li>
                     <li><a href="#" data-toggle="modal" class="btn btn-primary btn-lg">USUARIO </a></li>

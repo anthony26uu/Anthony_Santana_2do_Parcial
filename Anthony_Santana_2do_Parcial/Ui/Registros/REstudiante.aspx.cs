@@ -33,7 +33,7 @@ namespace Anthony_Santana_2do_Parcial.Ui.Registros
 
         }
 
-      
+
 
         Estudiantes estudianteg = new Estudiantes();
 
@@ -51,7 +51,7 @@ namespace Anthony_Santana_2do_Parcial.Ui.Registros
             estudianteg.Curso = TextBoxCurso.Text;
             return estudianteg;
         }
-                  protected void ButtGuardar_Click(object sender, EventArgs e)
+        protected void ButtGuardar_Click(object sender, EventArgs e)
         {
             int id = 0;
 

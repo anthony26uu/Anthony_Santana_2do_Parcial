@@ -1,10 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Aula.Master" AutoEventWireup="true" CodeBehind="REstudiante.aspx.cs" Inherits="Anthony_Santana_2do_Parcial.Ui.Registros.REstudiante" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    
+
 
     <!--Inclusión de Extras Para evitar Errores-->
     <script src="/Scripts/toastr.min.js"></script>
@@ -18,10 +19,10 @@
     <div class="text-center">
         <span class="badge badge-primary">ID</span><asp:TextBox ID="TextBoxID" TextMode="Number" class="input-lg" placeholder="ID a buscar " runat="server" Height="45px" Width="160px" ValidationGroup="buscar" MaxLength="10"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBoxID" ErrorMessage="**" Font-Bold="True" Font-Italic="True" ForeColor="Red" ValidationGroup="Buscar"></asp:RequiredFieldValidator>
-        <asp:Button ID="BotonBuscar" CssClass=" btn btn-default" runat="server" Text="Buscar" Height="45px" ValidationGroup="Buscar"  Width="83px" OnClick="BotonBuscar_Click"   />
+        <asp:Button ID="BotonBuscar" CssClass=" btn btn-default" runat="server" Text="Buscar" Height="45px" ValidationGroup="Buscar" Width="83px" OnClick="BotonBuscar_Click" />
 
         <br />
-    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxID" ErrorMessage="Solo Numeros y Numeros positivos" ForeColor="Red" ValidationExpression="\d+" ValidationGroup="Buscar"></asp:RegularExpressionValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxID" ErrorMessage="Solo Numeros y Numeros positivos" ForeColor="Red" ValidationExpression="\d+" ValidationGroup="Buscar"></asp:RegularExpressionValidator>
 
         <br />
 
@@ -77,7 +78,7 @@
 
         <br />
 
-           <span class="badge badge-primary">Direccion</span><br />
+        <span class="badge badge-primary">Direccion</span><br />
 
 
         &nbsp;
@@ -129,7 +130,7 @@
         <br />
         <span class="badge badge-primary">Telefono</span><br />
 
-        <asp:TextBox ID="TexboTelefono" placeholder="000-000-0000" class="input-lg" runat="server"  Height="30px" Width="215px" ValidationGroup="guardar" MaxLength="10"></asp:TextBox>
+        <asp:TextBox ID="TexboTelefono" placeholder="000-000-0000" class="input-lg" runat="server" Height="30px" Width="215px" ValidationGroup="guardar" MaxLength="10"></asp:TextBox>
 
 
 
@@ -159,8 +160,8 @@
     <div class="modal-footer">
         <div class=" text-center">
             <asp:Button ID="ButtonNuevo" CssClass="btn btn-warning" runat="server" Text="Nuevo" Height="36px" Width="88px" OnClick="ButtonNuevo_Click1" />
-            <asp:Button ID="ButtGuardar" CssClass="btn btn-success" runat="server" Text="Guardar" Height="36px" Width="88px" ValidationGroup="guardar" OnClick="ButtGuardar_Click1"  />
-            <asp:Button ID="ButtonEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" Height="36px" Width="88px" ValidationGroup="Buscar" OnClick="ButtonEliminar_Click"  />
+            <asp:Button ID="ButtGuardar" CssClass="btn btn-success" runat="server" Text="Guardar" Height="36px" Width="88px" ValidationGroup="guardar" OnClick="ButtGuardar_Click1" />
+            <asp:Button ID="ButtonEliminar" CssClass="btn btn-danger" runat="server" Text="Eliminar" Height="36px" Width="88px" ValidationGroup="Buscar" OnClick="ButtonEliminar_Click" />
         </div>
     </div>
 
