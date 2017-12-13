@@ -114,6 +114,7 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\toastr.min.js" />
+    <Content Include="Ui\Registros\RAsignatura.aspx" />
     <Content Include="Ui\Registros\REstudiante.aspx" />
     <Content Include="Ui\Registros\RProfesor.aspx" />
     <Content Include="Web.config" />
@@ -138,6 +139,13 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Ui\Registros\RAsignatura.aspx.cs">
+      <DependentUpon>RAsignatura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ui\Registros\RAsignatura.aspx.designer.cs">
+      <DependentUpon>RAsignatura.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ui\Registros\REstudiante.aspx.cs">
       <DependentUpon>REstudiante.aspx</DependentUpon>

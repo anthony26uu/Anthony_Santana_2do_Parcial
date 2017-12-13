@@ -109,7 +109,7 @@ namespace Anthony_Santana_2do_Parcial.Ui.Registros {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxCurso;
+        protected global::System.Web.UI.WebControls.DropDownList TextBoxCurso;
         
         /// <summary>
         /// RequiredFieldValidator4 control.

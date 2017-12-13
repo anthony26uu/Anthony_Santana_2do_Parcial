@@ -86,7 +86,8 @@
        
           <!--Texbox -->
 
-        <asp:TextBox ID="TextBoxCurso" placeholder="Curso" class="input-lg" runat="server" Height="30px" Width="215px" ValidationGroup="guardar" MaxLength="200"></asp:TextBox>
+        <asp:DropDownList ID="TextBoxCurso" runat="server" CssClass="btn btn-default" Height="42px" Width="199px">
+        </asp:DropDownList>
 
 
         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBoxCurso" ErrorMessage="**" Font-Bold="True" ForeColor="Red" ValidationGroup="guardar"></asp:RequiredFieldValidator>

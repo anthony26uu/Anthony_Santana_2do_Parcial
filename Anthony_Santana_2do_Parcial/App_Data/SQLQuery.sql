@@ -28,3 +28,8 @@ CREATE TABLE [dbo].[Profesores] (
 
 
 
+CREATE TABLE [dbo].[Asiganaturas] (
+    [AsiganaturaId]     INT          IDENTITY (1, 1) NOT NULL,
+    [Descripcion] VARCHAR (80) NULL,
+    PRIMARY KEY CLUSTERED ([AsiganaturaId] ASC)
+);

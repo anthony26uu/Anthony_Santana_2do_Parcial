@@ -16,6 +16,7 @@ namespace DAL
 
         public DbSet<Entidades.Profesores> profesoresDb { get; set; }
         public DbSet<Entidades.Estudiantes> estudiantesDb { get; set; }
+        public DbSet<Entidades.Asiganaturas> asiganaturaDb { get; set; }
     }
 }
 

@@ -14,6 +14,10 @@ namespace Anthony_Santana_2do_Parcial.Ui.Registros
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!Page.IsPostBack)
+            {
+                LlenarDrop();
+            }
             Utilidades.SCritpValidacion();
         }
 
@@ -30,6 +34,20 @@ namespace Anthony_Santana_2do_Parcial.Ui.Registros
             DropSexo.Text = "";
 
         }
+
+
+        private void LlenarDrop()
+        {
+            List<Entidades.Asiganaturas> ListaDrop = BLL.BLLAsignaturas.GetListodo();
+
+            TextBoxCurso.DataSource = ListaDrop;
+            TextBoxCurso.DataValueField = "AsiganaturaId";
+            TextBoxCurso.DataTextField = "Descripcion";
+            TextBoxCurso.DataBind();
+
+
+        }
+
 
         protected void ButtonNuevo_Click(object sender, EventArgs e)
         {
